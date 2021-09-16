@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>ACESSANDO PERFIL DE INSTAGRAM PELO NOME DE USUÁRIO</h1>
+
+
+    <label for="txt">Insira o nome de usuário</label>
+    <input type="text" name="txt" id="txt">
+    <input type="submit" onclick="vai()">
+
+
+    <script>
+        function vai(){
+        txtt = window.document.getElementById('txt').value
+        const base = "https://instagram.com/"
+        var urrl = base+txtt
+        location.assign(`${urrl}`)
+        }
+    </script>
+</body>
+</html>
